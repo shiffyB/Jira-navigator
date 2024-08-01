@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Extension Settings</title>
+  <meta http-equiv="Content-Security-Policy"
+    content="script-src 'self' https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com; style-src 'self' https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com;">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Settings</h1>
+
+    <!-- Success Alert -->
+    <div id="successAlert" class="alert alert-success d-none" role="alert">
+      Settings saved successfully!
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="jiraHost">Jira Host</label>
+        <input type="text" class="form-control" id="jiraHost" placeholder="https://jira.host.nationalId/">
+      </div>
+
+      <div class="form-group">
+        <label for="jiraProject">Jira Project</label>
+        <input type="text" class="form-control" id="jiraProject">
+      </div>
+
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="openNewTab" checked>
+        <label class="form-check-label" for="openNewTab">Open tickets in new tab</label>
+      </div>
+
+      <div class="form-group">
+        <label for="userName">User Name</label>
+        <input type="text" class="form-control" id="userName">
+      </div>
+
+      <div class="text-center">
+        <button type="button" class="btn btn-primary" id="saveButton">Save Settings</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Link Opener</title>
+  <meta http-equiv="Content-Security-Policy"
+    content="script-src 'self' https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com; style-src 'self' https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com;">
+  <meta charset="UTF-8">
+  <script src="popup.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="container mt-4 wrapper">
+    <div class="text-center mb-4">
+      <i id="openSettings" class="fas fa-cog fa-2x mb-3"></i>
+      <h4 id="welcomeMessage"></h4>
+      <p id="currentHostSetting"></p>
+      <input type="text" id="axiLinkInput" class="form-control mb-3" placeholder="Enter your ticket number here">
+
+      <div class="d-grid gap-2">
+        <button id="sendButton" class="btn btn-primary"></button>
+      </div>
+
+      <div id="recent-list" class="mt-4">
+        <h5>Recent Tickets</h5>
+        <ul id="recentTickets" class="list-group"></ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
